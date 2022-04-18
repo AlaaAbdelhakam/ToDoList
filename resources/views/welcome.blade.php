@@ -30,11 +30,24 @@
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col">
         <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
+       
           <div class="card-body py-4 px-4 px-md-5">
+           
             <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
+                             
+                                
+                          
            <a class="nav-link" href="{{ route('login') }}">Welcome Press here to login into your list</a>
             </p>
             <hr class="my-4">
+            
+          
+
+
+{{-- 
+<a class="nav-link d-none" href="{{  URL::temporarySignedRoute('register', now()->addMinutes(30));  }}">{{ __('Register link') }}</a> --}}
+
+
           </div>
         </div>
       </div>

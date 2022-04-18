@@ -5,7 +5,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             
-                
+<a class="nav-link" href="{{  URL::temporarySignedRoute('register', now()->addMinutes(30));  }}">{{ __('Register page') }}</a>
+
+
 
                         <div class="card-body">
                             @if (session('success'))
