@@ -4,10 +4,10 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            
+
 <a class="nav-link" href="{{  URL::temporarySignedRoute('register', now()->addMinutes(30));  }}">{{ __('Register page') }}</a>
 
-
+start testing merge
 
                         <div class="card-body">
                             @if (session('success'))
@@ -26,24 +26,24 @@
 
                                         <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
                                         <i class="fas fa-check-square me-1"></i>
-                                        <u>My Todo List</u>
+                                        <u>Rebase and Merge </u>
                                         </p>
                                         <form action="{{route('tasks.store')}}" method="POST">
                                                 @csrf
                                         <div class="pb-2">
                                         <div class="card">
                                             <div class="card-body">
-                                            <div class="d-flex flex-row align-items-center">     
+                                            <div class="d-flex flex-row align-items-center">
                                                 <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Add new..." name="task">
                                                 <div>
                                                 <input type="submit" class="btn btn-primary" value="Add">
-                                                
+
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                             </div>
-                                            
+
                                         </div>
                                         @if ($errors->any())
                                             <div class="alert alert-danger">
@@ -60,7 +60,7 @@
                                         <hr class="my-4">
                                         @foreach($tasks as $task)
                                         <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
-                                            
+
                                             <li class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
                                                 <p class="lead fw-normal mb-0">{{$task->task}}</p>
                                             </li>
@@ -80,9 +80,9 @@
                                 </div>
                             </div>
                         </section>
-  
+
                 </div>
-            
+
         </div>
     </div>
 </div>
