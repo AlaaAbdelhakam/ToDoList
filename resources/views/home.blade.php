@@ -7,7 +7,7 @@
 
 <a class="nav-link" href="{{  URL::temporarySignedRoute('register', now()->addMinutes(30));  }}">{{ __('Register page') }}</a>
 
-
+i am master
 
                         <div class="card-body">
                             @if (session('success'))
